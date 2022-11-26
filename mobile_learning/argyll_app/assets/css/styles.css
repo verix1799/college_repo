@@ -1,10 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Neuton&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Neuton&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
 @media screen and (max-width: 428px) {
   body {
     margin: 0;
   }
+
+  /* Bottom Navbar */
+  .nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #3b3b3b;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #eeeeee;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+  }
+
+  .nav__link:hover {
+    background-color: #eeeeee;
+  }
+
+  .nav__link--active {
+    color: #009578;
+  }
+
+  .nav__icon {
+    font-size: 18px;
+  }
+
+  /* Heading */
   header {
     background: url(../images/hero-background.jpg);
     position: absolute;
@@ -43,77 +87,169 @@
     margin: 6px 0;
   }
   .button {
-        font-family: 'Neuton';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 25px;
-        color: #ffffff;
-        position: absolute;
-        width: 110px;
-        height: 40px;
-        left: 300px;
-        top: 25px;
-        background: #53e27b;
-        border-radius: 25px;
-   }
+    font-family: "Neuton";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    left: 300px;
+    top: 25px;
+    background: #53e27b;
+    border-radius: 25px;
+  }
+
+  /* Reccomendations Section */
   .recommendations {
-     position: absolute;
-     width: 426px;
-     height: 846px;
-     left: 0px;
-     top: 530px;
-     background: #FEFEDF;
-   }
+    position: absolute;
+    width: 426px;
+    height: 846px;
+    left: 0px;
+    top: 530px;
+    background: #fefedf;
+  }
 
-    .recommendations-heading {
-        position: absolute;
-        width: 381px;
-        height: 119px;
-        left: 23px;
-        top: 42px;
-        font-family: 'Neuton', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 46px;
-        line-height: 58px;
-        color: #A4A4A4;
-    }
-    .menu-card {
-        position: absolute;
-        left: 33px;
-        right: 33px;
-        top: 229px;
-        bottom: 89px;
-        position: absolute;
-        height: 216px;
-        left: 33px;
-        right: 33px;
-        top: 229px;
-        bottom: 89px;
-        background-color: #ffffff;
-        background: url(../images/pizza-photo.jpg);
-        border-radius: 16px 16px 0px 0px;
-        background-repeat: no-repeat;
-    }
-    .item-name {
-        position: absolute;
-        width: 198px;
-        height: 25px;
-        left: 24px;
-        top: 248px;
-      
+  .recommendations-heading {
+    position: absolute;
+    width: 381px;
+    height: 119px;
+    left: 23px;
+    top: 42px;
+    font-family: "Neuton", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 58px;
+    color: #a4a4a4;
+  }
 
-        font-family: 'DM Serif Display';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 25px;
-       
+  .card {
+    position: absolute;
+    left: 33px;
+    right: 33px;
+    top: 229px;
+    height: 461px;
+    bottom: 89px;
+    border-radius: 16px;
+    background-color: #ffffff;
+  }
 
-        letter-spacing: 0.01em;
-       
+  .card-image {
+    position: absolute;
+    height: 216px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
 
-        color: #081F32;
-    }
+    background: url(../images/pizza-photo.jpg), #c4c4c4;
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  .card-title {
+    margin: 72.5% 0 0 28px;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+
+    letter-spacing: 0.01em;
+
+    color: #081f32;
+  }
+  .card-info {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #a5adbb;
+  }
+
+  .info-1 {
+    position: absolute;
+    width: 54px;
+    height: 25px;
+    right: 23px;
+    bottom: 90px;
+  }
+
+  .info-2 {
+    position: absolute;
+    width: 117px;
+    height: 25px;
+    left: calc(50% - 117px / 2 + 1.5px);
+    bottom: 90px;
+  }
+
+  .info-3 {
+    position: absolute;
+    width: 56px;
+    height: 25px;
+    left: 24px;
+    bottom: 90px;
+  }
+
+  .price {
+    position: absolute;
+    width: 169px;
+    height: 25px;
+    left: 24px;
+    top: 386px;
+  }
+  .price > div {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+  }
+  .price > div > h1 {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 25px;
+    margin: 0;
+    color: #081f32;
+  }
+  .price > div > h1 > span {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    color: #f8593b;
+  }
+
+  .menu-button {
+    position: absolute;
+    width: 114px;
+    height: 44px;
+    right: 24px;
+    bottom: 39px;
+    background: #2ecc71;
+    border-radius: 4px;
+    border: none;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 179% */
+
+    text-align: center;
+    letter-spacing: 0.18em;
+
+    /* White */
+
+    color: #ffffff;
+  }
 }
