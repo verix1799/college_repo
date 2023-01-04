@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Neuton&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
 @media screen and (max-width: 428px) {
   body {
@@ -53,17 +54,16 @@
     background: url(../images/hero-background.jpg);
     position: absolute;
     background-repeat: no-repeat;
+
     width: 428px;
     height: 846px;
     left: 0px;
   }
 
   .quote {
-    position: absolute;
-    width: 443px;
+    width: 422px;
     height: 85px;
-    left: 0.5%;
-    top: 437px;
+    margin: 437px 1px auto 1px;
 
     color: #ffffff;
     font-family: "Nunito Sans", sans-serif;
@@ -83,23 +83,26 @@
   .hamburger {
     width: 25px;
     height: 2px;
-    background-color: #ffffff;
     margin: 6px 0;
+
+    background-color: #ffffff;
   }
   .button {
+    border: none;
+    border-radius: 25px;
     font-family: "Neuton";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
     color: #ffffff;
+    background: #53e27b;
+
     position: absolute;
     width: 110px;
     height: 40px;
     left: 300px;
     top: 25px;
-    background: #53e27b;
-    border-radius: 25px;
   }
 
   /* Reccomendations Section */
@@ -109,6 +112,7 @@
     height: 846px;
     left: 0px;
     top: 530px;
+
     background: #fefedf;
   }
 
@@ -118,6 +122,7 @@
     height: 119px;
     left: 23px;
     top: 42px;
+
     font-family: "Neuton", serif;
     font-style: normal;
     font-weight: 400;
@@ -127,50 +132,37 @@
   }
 
   .card {
-    position: absolute;
-    left: 33px;
-    right: 33px;
-    top: 229px;
+    width: 360px;
     height: 461px;
-    bottom: 89px;
-    border-radius: 16px;
-    background-color: #ffffff;
+    background-color: #fff;
+    border-radius: 17px;
+    margin: 229px 33px 89px 33px;
   }
-
-  .card-image {
-    position: absolute;
-    height: 216px;
-    left: 0%;
-    right: 0%;
-    top: 0px;
-
-    background: url(../images/pizza-photo.jpg), #c4c4c4;
+  .card > img {
     border-radius: 16px 16px 0px 0px;
   }
-
   .card-title {
-    margin: 72.5% 0 0 28px;
-
+    margin: 32px 138px 47px 24px;
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 25px;
+    width: 198px;
 
     letter-spacing: 0.01em;
 
     color: #081f32;
   }
-  .card-info {
+
+  .info-1 {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 25px;
     color: #a5adbb;
-  }
 
-  .info-1 {
     position: absolute;
     width: 54px;
     height: 25px;
@@ -179,6 +171,13 @@
   }
 
   .info-2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #a5adbb;
+
     position: absolute;
     width: 117px;
     height: 25px;
@@ -187,6 +186,13 @@
   }
 
   .info-3 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #a5adbb;
+
     position: absolute;
     width: 56px;
     height: 25px;
@@ -215,8 +221,9 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 25px;
-    margin: 0;
+
     color: #081f32;
+    margin: 0;
   }
   .price > div > h1 > span {
     font-family: "DM Serif Display";
@@ -224,8 +231,9 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
-    margin: 0;
+
     color: #f8593b;
+    margin: 0;
   }
 
   .menu-button {
@@ -251,5 +259,8 @@
     /* White */
 
     color: #ffffff;
+  }
+  .swipe-control {
+    margin-top: 730px;
   }
 }

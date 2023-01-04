@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#" class="nav__link">
+        <i class="material-icons nav__icon">dashboard</i>
+        <span class="nav__text">Home</span>
+      </a>
+      <a href="#" class="nav__link nav__link--active">
+        <i class="material-icons nav__icon">Discover</i>
+        <span class="nav__text">Profile</span>
+      </a>
+      <a href="#" class="nav__link">
+        <i class="material-icons nav__icon"></i>
+        <span class="nav__text"></span>
+      </a>
+      <a href="#" class="nav__link">
+        <i class="material-icons nav__icon"></i>
+        <span class="nav__text"></span>
+      </a>
+    </nav>
+    <header>
+ 
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">
+          <div class="menu-bar">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+          </div>
+        </button>
+        <button class="nav-button" type="button" name="myButton">
+          Order Now
+        </button>
+  
+      <h1>Our menu</h1>
+    </header>
+    <section id="menu-section">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <img
+                    src="assets/images/menu-item.png"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Baked Pizza Wrap - Vegetarian</h2>
+                <p class="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">David Dell</h2>
+                <p class="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <div class="card-image">
+                  <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">David Dell</h2>
+                <p class="description">
+                  The lorem text the section that contains header with having
+                  open functionality. Lorem dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+
+      
+              </div>
+            </div>
+                  
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </body>
+  <!-- Swiper JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/menu.js"></script>
+</html>

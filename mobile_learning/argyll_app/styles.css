@@ -1,0 +1,12 @@
+body {
+  background-color: aqua;
+}
+.card {
+  width: 360px;
+  height: 461px;
+  background-color: #fff;
+  border-radius: 17px;
+}
+.card > img {
+  border-radius: 16px 16px 0px 0px;
+}
