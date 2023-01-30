@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Sidebar */
+      body {
+        margin: 0;
+      }
+      .menu-bar {
+        position: absolute;
+        width: 43px;
+        height: 40px;
+        left: 17px;
+        top: 25px;
+      }
+      .hamburger {
+        width: 25px;
+        height: 2px;
+        background-color: rgb(0, 0, 0);
+        margin: 6px 0;
+      }
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      /* Sign in Page Start */
+      #header {
+        display: flex;
+        margin-top: 5%;
+      }
+
+      h1 {
+        flex: 1;
+
+        padding: 0 10%;
+
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #000000;
+      }
+      .heading {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+
+        /* identical to box height */
+
+        color: #000000;
+      }
+      label {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+
+        color: #000000;
+      }
+      input {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+        width: 272.78px;
+        background: #ffffff;
+        border: 1px solid #e48700;
+        border-radius: 9px;
+        margin: 20px 0;
+        padding: 12px 20px;
+
+        color: #808080;
+      }
+      label,
+      input {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #form-section {
+        margin-top: 10%;
+        padding: 0 10%;
+        height: 300px;
+      }
+
+      .sign-in-btn {
+        background: #e48700;
+        border: none;
+        border-radius: 10px;
+
+        width: 272px;
+        height: 54px;
+        margin: 22px auto;
+
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+
+        color: #ffffff;
+      }
+
+      span {
+        color: #e48700;
+      }
+
+      footer {
+        margin-top: 10%;
+        height: 307px;
+        background: #f7fafc;
+      }
+
+      .nav-footer {
+        width: 352px;
+        height: 23px;
+        padding-top: 10%;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li {
+        display: inline;
+        padding: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">
+      <div class="menu-bar">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </button>
+
+    <section id="header">
+      <h1>Welcome to <span>Argyll Diner</span></h1>
+      <h1>No Account ? <span>Sign up</span></h1>
+    </section>
+    <h1 class="heading">Sign In</h1>
+    <section id="form-section">
+      <form id="survey-form">
+        <label for="name">Enter your username or email address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Username or Email address"
+        />
+
+        <label>Enter your Password</label>
+        <input type="text" id="password" placeholder="Password" />
+      </form>
+      <a style="float: right" href="">Forgot Password</a>
+      <button class="sign-in-btn">Sign in</button>
+    </section>
+
+    <footer>
+      <div class="nav-footer">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <p>© Copyright 2021 Argyll Diner. Powered with ♥ by</p>
+      <p>CreativeDesigns Vedic</p>
+    </footer>
+  </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+</html>
